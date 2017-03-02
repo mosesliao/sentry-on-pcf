@@ -1,0 +1,18 @@
+---
+applications:
+- name: sentry
+  instances: 1
+  stack: cflinuxfs2
+  timeout: 160
+  health-check-type: process
+services:
+  - sentry-db
+  - sentry-redis
+env:
+  # http_proxy: 
+  # https_proxy: 
+  # SMTP_BACKEND: 
+  # SMTP_HOST: 
+  # SMTP_PORT: 
+  # superuser_email: 
+  # superuser_password: 
